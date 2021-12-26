@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- animate-link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans:wght@400;500;800&family=Playfair+Display:wght@400;500&family=Poppins:wght@500&family=Raleway:wght@500;600;700;800&family=Roboto:wght@400;500&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="style.css">
+
+
+    <title>Alex !FrontEndDevloper</title>
+</head>
+
+<body>
+
+    <!-- header section  -->
+
+    <header>
+        <section class="header section">
+            <div class="navbar container d-flex justify-content-between align-items-center">
+                <div class="logo">
+                    <a href="#" class="navbar-brand">Alex.</a>
+                </div>
+                <div class="menu d-none d-md-block ">
+                    <ul class="list-unstyled d-flex ">
+                        <li><a class="nav-link" href="#home">home</a></li>
+                        <li><a class="nav-link" href="#about">about</a></li>
+                        <li><a class="nav-link" href="resume">resume</a></li>
+                        <li><a class="nav-link" href="services">services</a></li>
+                        <li><a class="nav-link" href="portfolio">portfolio</a></li>
+                        <li><a class="nav-link" href="contact">contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- offcanvas section  -->
+
+                <div class="mobile-section border d-md-none ">
+                    <button class="btn text-light fwdbtn " type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
+                            class='bx bx-align-right '></i></button>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                        aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 id="offcanvasRightLabel">Menubar</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body h-25">
+                            <div class="menubar ">
+                                <ul class="list-unstyled d-flex flex-column bg-dark ">
+                                    <li><a class="nav-link" href="#home">home</a></li>
+                                    <li><a class="nav-link" href="#about">about</a></li>
+                                    <li><a class="nav-link" href="resume">resume</a></li>
+                                    <li><a class="nav-link" href="services">services</a></li>
+                                    <li><a class="nav-link" href="portfolio">portfolio</a></li>
+                                    <li><a class="nav-link" href="contact">contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+    </header>
+
+    <!-- hero section  -->
+
+    <section class="hero">
+        <div class="container-fluid text-center ">
+            <div class="hero-title text-center">
+                <h1 class="text-white">Alex Miguel</h1>
+                <p class="lead">A PROFFESSIONAL FRONTEND DEVELOPER FROM DHAKA</p>
+                <div class="slider ">
+                    <a href="#about"><i class='bx bx-chevron-down'></i></a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- about section  -->
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-title text-center">
+                <h1>ABOUT ME</h1>
+                <span class="background">ABOUT ME</span>
+                <p>Hey, I'm a Frontend Developer working since 2017 with 500+ work completion.</p>
+            </div>
+
+            <div class="about-main row ">
+                <div class=" about-image col-lg-4 text-center">
+                    <img class="img-fluid" src="images/alex.jpg" alt="">
+                </div>
+                <div id="about-box" class="col-lg-8 ">
+                    <div class=" about-content  row">
+                        <div class="col-xl-6">
+                            <ul class="list-unstyled">
+                                <li><i class='bx bx-user'></i>
+                                    <p><strong class="strong">Name:</strong>Alex Miguel</p>
+                                </li>
+
+
+                                <li><i class='bx bx-globe'></i>
+                                    <p><strong class="strong">Website:</strong>www.example.com</p>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+                        <div class="col-xl-6">
+                            <ul class="list-unstyled ">
+                                <li><i class='bx bx-envelope'></i>
+                                    <p><strong class="strong">Email:</strong>email@example.com</p>
+                                </li>
+
+
+                                <li><i class='bx bx-phone-call'></i>
+                                    <p><strong class="strong">Phone:</strong>+123 456 7890</p>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class=" counter-section row ">
+                        <div class="col-md-6">
+                            <div class="counter d-flex  ">
+                                <div class="icon">
+                                    <i class='bx bxs-happy-beaming'></i>
+                                </div>
+
+                                <div class="counter-item px-4 ">
+                                    <span data-purecounter-start="0" data-purecounter-end="541" class="purecounter ">
+                                    </span>
+                                    <p>happy clients</p>
+                                </div>
+                            </div>
+                            <div class="counter d-flex    ">
+                                <div class="icon ">
+                                    <i class='bx bx-desktop'></i>
+                                </div>
+
+                                <div class="counter-item px-4">
+                                    <span data-purecounter-start="0" data-purecounter-end="232" class="purecounter">
+                                    </span>
+                                    <p>projects</p>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="counter d-flex">
+                                <div class="icon">
+                                    <i class='bx bx-coffee'></i>
+                                </div>
+
+                                <div class="counter-item px-4">
+                                    <span data-purecounter-start="0" data-purecounter-end="4" class="purecounter">
+                                    </span>
+
+                                    <p>Years of Experience</p>
+                                </div>
+
+                            </div>
+                            <div class="counter d-flex">
+                                <div class=" counter icon">
+                                    <i class='bx bxl-ok-ru'></i>
+                                </div>
+                                <div class="counter-item px-4">
+                                    <span data-purecounter-start="0" data-purecounter-end="7" class="purecounter">
+                                    </span>
+
+                                    <p>Awards</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tool-section" class="row">
+                        <div class=" tools">
+                            <h1>Tools I Use</h1>
+                        </div>
+                        <div class="">
+                            <div class="image-box d-flex flex-row">
+
+
+                                <div class="tool">
+                                    <img src="images/html.png" alt="">
+                                </div>
+                                <div class="tool">
+                                    <img src="images/men-nature.jpg" alt="">
+                                </div>
+                                <div class="tool">
+                                    <img src="images/tailwind.jpg" alt="">
+                                </div>
+
+
+
+                                <div class="tool">
+                                    <img src="images/bootstrap.png" alt="">
+                                </div>
+                                <div class="tool">
+                                    <img src="images/css.png" alt="">
+                                </div>
+
+
+
+                                <div class="tool">
+                                    <img src="images/figma.svg" alt="">
+                                </div>
+
+
+                                <div class="tool">
+                                    <img src="images/github.png" alt="">
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- portfolio section  -->
+
+    <section class="portfolio" id="portfolio">
+        <div class="container text-center">
+            <div class="section-title">
+                <h1>PORTFOLIO</h1>
+                <span class="background">MY WORK</span>
+                <p>Here are my Popular Web Design Work</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card px-5 py-5 my-3 mx-0 mx-md-2 shadow">
+                        <div class="card-element">
+                            <div id="card-image">
+                                <img class="img-fluid" src="images/project1.png" alt="">
+                            </div>
+                            <div id="card-content" class="text-start">
+                                <h1>A Web Agency Webiste</h1>
+                                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                    occaecati
+                                    cupiditate non provident</p>
+                                <div id="card-btn">
+                                    <button class="btn btn-warning btn-lg lead"><i class='bx bx-link-alt'></i>Visit
+                                        Site</button>
+                                    <button class="btn btn-dark btn-lg lead"><i class='bx bxl-github'></i>Visit
+                                        Code</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card px-5 py-5 my-3 mx-0 mx-md-2 shadow">
+                        <div class="card-element">
+                            <div id="card-image">
+                                <img class="img-fluid" src="images/project2.png" alt="">
+                            </div>
+                            <div id="card-content" class="text-start">
+                                <h1>A Web Agency Webiste</h1>
+                                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                    occaecati
+                                    cupiditate non provident</p>
+                                <div id="card-btn">
+                                    <button class="btn btn-warning btn-lg lead"><i class='bx bx-link-alt'></i>Visit
+                                        Site</button>
+                                    <button class="btn btn-dark btn-lg lead"><i class='bx bxl-github'></i>Visit
+                                        Code</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="card px-5 py-5 my-3 mx-0 mx-md-2 shadow ">
+                        <div class="card-element">
+                            <div id="card-image">
+                                <img class="img-fluid" src="images/project3.png" alt="">
+                            </div>
+                            <div id="card-content" class="text-start">
+                                <h1>A Web Agency Webiste</h1>
+                                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                    occaecati
+                                    cupiditate non provident</p>
+                                <div id="card-btn">
+                                    <button class="btn btn-warning btn-lg lead"><i class='bx bx-link-alt'></i>Visit
+                                        Site</button>
+                                    <button class="btn btn-dark btn-lg lead"><i class='bx bxl-github'></i>Visit
+                                        Code</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card px-5 py-5 my-3 mx-0 mx-md-2 shadow ">
+                        <div class="card-element">
+                            <div id="card-image">
+                                <img class="img-fluid" src="images/project4.png" alt="">
+                            </div>
+                            <div id="card-content" class="text-start">
+                                <h1>A Web Agency Webiste</h1>
+                                <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                                    occaecati
+                                    cupiditate non provident</p>
+                                <div id="card-btn">
+                                    <button class="btn btn-warning btn-lg lead"><i class='bx bx-link-alt'></i>Visit
+                                        Site</button>
+                                    <button class="btn btn-dark btn-lg lead"><i class='bx bxl-github'></i>Visit
+                                        Code</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- service section  -->
+
+    <section class="service " id="sevice">
+        <div class="container ">
+            <div class=" service section-title text-center">
+                <h1>MY SERVICES</h1>
+                <span class="background">MY SERVICES</span>
+                <p>Here are my Popular Web Design Services</p>
+            </div>
+
+            <div class="row ">
+                    <div class="col-lg-3">
+                        <div class="service-element ">
+                            <div class="service-content shadow mb-5 mb-lg-3">
+                                <div class="service-icon">
+                                    <i class='bx bx-file text-warning'></i>
+                                </div>
+                                <h2>Sed ut perspiciatis</h2>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat
+                                    nulla pariatur</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                   <div class="service-element">
+                    <div class="service-content shadow mb-5 mb-lg-3">
+                        <div class="service-icon">
+                            <i class='bx bxl-dribbble text-warning'></i>
+                        </div>
+                        <h2>Sed ut perspiciatis</h2>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                            fugiat
+                            nulla pariatur</p>
+                    </div>
+                   </div>
+                    </div>
+
+
+
+                    <div class="col-lg-3">
+                        <div class="service-element ">
+                            <div class="service-content shadow mb-5 mb-lg-3">
+                                <div class="service-icon">
+                                    <i class='bx bx-tachometer text-warning'></i>
+                                </div>
+                                <h2>Sed ut perspiciatis</h2>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat
+                                    nulla pariatur</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="service-element ">
+                            <div class="service-content shadow mb-5 mb-lg-3">
+                                <div class="service-icon">
+                                    <i class='bx bx-world text-warning'></i>
+                                </div>
+                                <h2>Sed ut perspiciatis</h2>
+                                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                    fugiat
+                                    nulla pariatur</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+       
+        </div>
+    </section>
+
+    <!-- contact section  -->
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title text-center">
+                <h1>CONTACT ME</h1>
+                <span class=" contact background">CONTACT ME</span>
+                <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-6 ">
+                    <div class="row">
+                        <div class="contact-content">
+                            <div class="social-item shadow-lg d-flex flex-column justify-content-center align-items-center py-5 px-md-4 py-md-3 ">
+                                <div class="contact service-icon my-0  py-0 text-center text-warning">
+                                    <i class="bx bx-share-alt"></i>
+                                </div>
+                                <h2>Social Profiles</h2>
+                                <div class="social-links d-flex">
+                                    <div class="icon-box-back">
+                                        <div class="icon-box">
+                                            <a href="#" class="twitter"> <i class="bx bxl-twitter"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="icon-box-back">
+                                        <div class="icon-box">
+                                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                        </div>
+                                    </div>
+
+                                    <div class="icon-box-back">
+                                        <div class="icon-box">
+                                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="icon-box-back">
+
+                                        <div class="icon-box">
+                                            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="icon-box-back">
+                                        <div class="icon-box">
+                                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row gx-3 ">
+
+                        <div class="col-lg-6  ">
+                            <div class="e-item shadow-lg d-flex flex-column justify-content-center align-items-center my-4 ">
+                                <div class=" contact service-icon text-center text-warning my-4 mt-md-4 ">
+                                    <i class="bx bx-envelope"></i>
+                                </div>
+                                <h3 class="lead">Email Me</h3>
+                                <p class=" py-4 py-lg-3 my-0 mx-0">contact@example.com</p>
+                            </div>
+                        </div>
+                        <div class=" col-lg-6 ">
+                            <div class="e-item shadow-lg d-flex flex-column justify-content-center align-items-center  my-4  ">
+                                <div class=" contact service-icon text-center text-warning my-4 mt-md-4 ">
+                                    <i class="bx bx-phone-call"></i>
+                                </div>
+                                <h3 class="lead">Call Me</h3>
+                                <p class="py-4 py-lg-3 my-0 mx-0">+1 5589 55488 55</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 ">
+                    <div class="contact-form text-center shadow-lg px-4  py-5">
+                        <form>
+                            <div class="row">
+                                <div class="col-lg-6 ">
+                                    <input type="text" class="form-control py-3" placeholder="Your Name"
+                                        aria-label="name">
+                                </div>
+                                <div class="col-lg-6 mt-3 mt-lg-0">
+                                    <input type="email" class="form-control py-3" placeholder="Your Email"
+                                        aria-label="email">
+                                </div>
+                            </div>
+                            <div class="my-3">
+
+                                <input type="text" class="form-control py-3" id="formGroupExampleInput"
+                                    placeholder="Subject">
+                            </div>
+                            <div class="mb-3">
+
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+                                    placeholder="Meassage"></textarea>
+                            </div>
+                            <button class="btn btn-warning btn-lg mt-3">Send Message </button>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- footer section -->
+    <section class="footer" id="footer">
+        <div class="container">
+            <div class="footer-content text-center ">
+                <h1>Alex Miguel</h1>
+                <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+
+                <div class="  footer-links d-flex justify-content-center align-items-center">
+                    <a href="#" class="twitter"> <i class="bx bxl-twitter"></i></a>
+                    <a href="#" class="twitter"> <i class="bx bxl-facebook"></i></a>
+                    <a href="#" class="twitter"> <i class="bx bxl-instagram"></i></a>
+                    <a href="#" class="twitter"> <i class="bx bxl-skype"></i></a>
+                    <a href="#" class="twitter"> <i class="bx bxl-linkedin"></i></a>
+                </div>
+
+                <p class="p">&copy; Copyright <span>Alex.</span>  All Rights Reserved</p>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    
+    <!-- Optional JavaScript; choose one of the two! -->
+    <script src="/js/purecounter.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

@@ -1,0 +1,596 @@
+:root {
+    --primary-color: #ffb727;
+    --secondary-color: #444444;
+    /* font  */
+    --font-great-vibes: 'Great Vibes', cursive;
+    --font-open-sans: 'Open Sans', sans-serif;
+    --font-raleway: 'Raleway', sans-serif;
+    --font-satisfy: 'Satisfy', cursive;
+}
+
+body {
+    font-family: var(--font-open-sans);
+
+}
+
+a {
+    color: white;
+    text-transform: capitalize;
+  
+}
+
+p {
+    padding: 2rem 0;
+}
+
+
+/* header section  */
+
+header {
+    margin-bottom: -6rem;
+    z-index: 1;
+    position: relative;
+}
+
+.header-section {
+    padding-top: 6rem;
+}
+
+.menu ul {
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.menu ul li a {
+    color: white;
+    font-family: var(--font-open-sans);
+    position: relative;
+  
+}
+
+.menu ul li a::before {
+    content: " ";
+    background: var(--primary-color);
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    bottom: 0;
+    visibility: hidden;
+    transition: width 0.4s ease-in-out;
+}
+
+.menu a:hover,
+.menu a:focus {
+    color: var(--primary-color);
+}
+
+.menu a:hover::before {
+    visibility: visible;
+    width: 40px;
+}
+
+.logo a{
+    color: white;
+    font-size: 2rem;
+    font-family: var(--font-great-vibes);
+
+}
+
+.bx.bx-align-right {
+    font-size: 1.3rem;
+    width: 15px;
+    height: 20px;
+    padding-top: 0.3rem;
+
+}
+
+
+
+/* hero section  */
+
+.hero {
+    background: url("images/men-nature.jpg") top right;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.hero::before {
+    content: " ";
+    background: rgba(10, 10, 10, 0.726) bottom left;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.hero-title {
+    z-index: 3;
+    color: white;
+    position: relative;
+    margin-bottom: -6rem;
+
+}
+
+.hero-title h1 {
+    font-size: 3rem;
+    font-family: var(--font-satisfy);
+
+}
+
+.hero-title P {
+    font-size: 1.1rem;
+}
+
+.slider i {
+    font-size: 6rem;
+    margin-bottom: 6rem;
+    animation: up-down 1.6s ease-in-out alternate-reverse infinite;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.slider i:hover {
+    color: var(--primary-color);
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(50%);
+    }
+
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+
+
+
+/* about section  */
+
+.section-title {
+    margin-top: 8rem;
+    position: relative;
+
+}
+
+.section-title h1 {
+    font-family: var(--font-raleway);
+    font-size: 2rem;
+    font-weight: 650;
+}
+
+.background {
+    font-weight: 700;
+    font-size: 3rem;
+    color: rgba(46, 38, 38, 0.096);
+    position: absolute;
+    top: -45px;
+    left: 0;
+    right: 0;
+}
+
+.section-title p {
+    font-size: 1.1rem;
+    font-weight: 300;
+    color: rgba(46, 38, 38, 0.664);
+    padding: 3rem 0;
+}
+
+.about-main i {
+    font-size: 3rem;
+    color: rgb(255, 174, 23);
+}
+
+.about-main {
+    font-size: 1.3rem;
+
+}
+
+.about-main .counter-item p {
+    padding-top: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-family: var(--font-raleway);
+    color: var(--secondary-color);
+}
+
+.purecounter {
+    font-size: 3rem;
+    font-weight: 500;
+    color: var(--secondary-color);
+}
+
+.icon {
+    padding-top: 0.6rem;
+}
+.about-content ul li {
+    display: flex;
+    align-items: center;
+
+}
+
+.about-content ul li p {
+    padding-left: 1rem;
+}
+
+.about-content ul li p strong {
+    padding-right: 1rem;
+    font-size: 1rem;
+}
+
+.tools h1 {
+    font-size: 1.7rem;
+    color: var(--secondary-color);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: var(--font-raleway);
+}
+
+.image-box {
+    margin-top: 4rem;
+
+}
+
+.about-main .image-box .tool {
+    height: 100px;
+    width: 100px;
+    margin-left: 1rem;
+
+}
+
+.about-main .image-box .tool img {
+    max-width: 50px;
+    max-height: 50px;
+    object-fit: contain;
+    cursor: pointer;
+
+}
+
+.about-main .image-box .tool img:hover {
+    animation: bounce;
+    animation-duration: 1s;
+}
+
+
+
+/* responsive for about section 
+ */
+@media(min-width:768px) {
+    .purecounter {
+        font-size: 1.2rem;
+        font-weight: 540;
+    }
+
+    .about-main .counter-item p {
+        font-weight: 600;
+    }
+
+    .tools h1 {
+        font-weight: 600;
+    }
+
+    .icon {
+        padding-top: unset;
+    }
+
+    .about-content {
+        margin-left: 2rem;
+    }
+
+    .counter-section {
+        margin-left: 2rem;
+    }
+
+    .tools {
+        margin-left: 3rem;
+    }
+
+    .image-box {
+        margin-left: 2rem;
+    }
+
+    .about-image {
+        padding-top: 3rem;
+    }
+}
+
+/* @media(min-width:1200px){
+    .about-content{
+        margin-left: 0.5rem;
+    }
+    .counter-section{
+     margin-left: 0.5rem;
+    }
+    .tools{
+     margin-left: 1rem;
+    }
+    .image-box{
+     margin-left: 0.5rem;
+    }
+    .about-image{
+        padding-top: 1rem;
+    }
+    .about-content ul li p{
+      font-size: 2rem;
+    }
+   
+} */
+@media(min-width:992px) {
+    .about-content {
+        margin-left: 0;
+    }
+
+    .counter-section {
+        margin-left: 0;
+    }
+
+    .tools {
+        margin-left: 0;
+    }
+
+    .image-box {
+        margin-left: 0;
+    }
+
+    .about-image {
+        padding-top: 0;
+    }
+
+    .about-content ul li p {
+        
+        padding-left: 0.3rem;
+
+    }
+}
+
+/* end responsive */
+
+
+
+
+/* portfolio section  */
+.card {
+    border: 2px solid white;
+}
+
+.card:hover {
+    border: 2px solid rgb(231, 199, 139);
+}
+
+#card-btn i {
+    padding: 0 0.5rem;
+}
+
+#card-content h1 {
+    padding-top: 1rem;
+    color: rgba(224, 193, 14, 0.774);
+}
+
+#card-content p {
+    color: rgb(141, 117, 117);
+    line-height: 30px;
+
+}
+
+
+/* service section  */
+
+.service-content {
+
+    padding: 1.5rem 1rem;
+    width: 70%;
+    height: 20%;
+    margin: auto;
+    text-align: center;
+    background: white;
+    border: 2px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+
+}
+
+.service .background {
+    font-size: 3rem;
+}
+
+
+.service-content:hover {
+    border: 2px solid rgba(224, 193, 14, 0.774);
+
+}
+
+.service-content h2 {
+    padding-top: 1.3rem;
+    transition: all 0.5s ease-in-out;
+}
+
+.service-content h2:hover {
+    color: rgba(224, 193, 14, 0.774);
+
+}
+
+.service-icon i {
+    font-size: 2rem;
+    padding-top: 1.3rem;
+}
+
+.service-icon {
+    background: rgba(235, 220, 133, 0.226);
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+
+
+
+
+@media (min-width:992px) {
+    .service-content {
+        width: 100%;
+        padding: 2rem 1rem;
+        margin: 0 2rem;
+    }
+
+}
+
+
+/* contact--section */
+.social-links a i {
+    font-size: 1.5rem;
+    color: rgba(210, 105, 30, 0.486);
+    position: absolute;
+    text-align: center;
+    background: rgba(235, 220, 133, 0.322);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    top: 2px;
+    left: 2px;
+    border: 4px solid white;
+
+
+}
+
+.contact .background {
+    font-size: 4rem;
+}
+
+.social-item {
+    padding: 1rem;
+}
+
+.e-item {
+    padding: 1rem;
+}
+
+.social-links {
+    margin-top: 2rem;
+}
+
+.contact-content h2,
+h3 {
+    margin-top: 0.9rem;
+    font-size: 1.8rem;
+}
+
+.contact.service-icon i {
+    font-size: 1.5rem;
+    padding-top: 1.3rem;
+}
+
+.contact.service-icon {
+    width: 60px;
+    height: 60px;
+
+
+}
+
+.icon-box a {
+    width: 55px;
+    height: 55px;
+    display: block;
+    border-radius: 100%;
+    margin: 0 8px;
+    position: relative;
+    background: white;
+    border: 1px solid rgba(0, 0, 255, 0.151);
+
+}
+
+.icon-box a i:hover {
+    border: 4px solid chocolate;
+}
+
+.email-call {
+    margin-top: 2rem;
+
+}
+
+.e-item h3 {
+    color: rgba(99, 96, 96, 0.781);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.social-item h2 {
+    color: rgba(99, 96, 96, 0.699);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+/* footer  */
+
+.footer {
+    background: url("images/men-nature.jpg") bottom right;
+    color: white;
+    position: relative;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+
+}
+
+.footer::before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.733);
+    background-size: cover;
+    height: 100vh;
+}
+
+.footer-links a {
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color);
+    border-radius: 100%;
+    color: white;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0 8px;
+
+}
+
+.footer h1 {
+    font-family: var(--font-satisfy);
+    z-index: 1;
+    position: relative;
+    font-size: 2.8rem;
+    font-weight: 600;
+}
+
+.footer p {
+    font-family: var(--font-raleway);
+    font-style: italic;
+    position: relative;
+    z-index: 1;
+}
+
+.footer .p {
+    font-style: inherit;
+    font-size: 1rem;
+}
+
+.footer .p span {
+    font-weight: 600;
+    font-family: var(--font-open-sans);
+}
